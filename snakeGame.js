@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gameArea = document.querySelector('.gameArea')
-    gameArea.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-
+    bgcolor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    while (bgcolor === "#9ACD32" || bgcolor === "#FF0000") {
+        bgcolor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    }
+    gameArea.style.backgroundColor = bgcolor;
 
     const width = 64;
     const height = 36;
