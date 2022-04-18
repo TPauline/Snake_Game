@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bgcolor = "#" + Math.floor(Math.random() * 16777215).toString(16);
     }
     gameArea.style.backgroundColor = bgcolor;
+    document.getElementById('title').style.textShadow = "-12px -12px " + bgcolor;
 
     const width = 64;
     const height = 36;
